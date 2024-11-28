@@ -66,5 +66,11 @@ git branch
 # 브랜치 생성과 전환을 동시에
 git checkout -b 브랜치명
 
-# 브랜치 삭제
+# 로컬 브랜치 삭제 (feat1)
 git branch -D 브랜치명
+
+# git fetch : 원격의 변경사항을 로컬에 가져오되, 병합은 하지 않는것
+# 비교 : git pull origin main vs git fetch origin main
+
+# 원격에서 삭제된 브랜치 로컬에 반영 (origin/feat1)
+git fetch --all --prune
