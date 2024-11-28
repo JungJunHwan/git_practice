@@ -45,19 +45,4 @@ git checkout 커밋ID
 
 # 가장 최신의 커밋 취소 : working directory changes까지로 reset
 git reset head~1
-git reset^
-
-# commit 이력 확인(local 레포의 이력)
-git log
-
-# 로그 한줄로 간결히 확인
-git log --oneline
-
-# 커밋 이력을 그래프 형태로 조회
-git log --graph
-
-# 원격저장소로 업로드
-git push origin 브랜치명
-
-# 충돌 발생시 무시하고 강제 push
-git push origin main --force
+git reset head^
