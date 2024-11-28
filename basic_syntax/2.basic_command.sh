@@ -15,3 +15,18 @@ git commit
 
 # add와 commit을 동시에
 git commit -am "커밋메시지"
+
+# commit 이력 확인(local 레포의 이력)
+git log
+
+# 로그 한줄로 간결히 확인
+git log --oneline
+
+# 커밋 이력을 그래프 형태로 조회
+git log --graph
+
+# 원격저장소로 업로드
+git push origin 브랜치명
+
+# 충돌 발생시 무시하고 강제 push
+git push origin main --force
