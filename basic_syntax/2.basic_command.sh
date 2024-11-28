@@ -46,3 +46,9 @@ git checkout 커밋ID
 # 가장 최신의 커밋 취소 : working directory changes까지로 reset
 git reset head~1
 git reset head^
+
+# 버전별(commitID간, bracnh간) 비교 명령어 : diff
+# A를 기준으로 B가 어떤 변경이 있느지를 비교
+git diff A B
+git diff commitID1 commitID2
+git diff 브랜치1 브랜치2
