@@ -38,9 +38,8 @@ git push origin main --force
 # pull은 원격의 커밋 사항을 로컬로 다운로드(working directory까지 반영)
 git pull origin main
 
-# 특정 commit ID, 브랜치로
+# 특정 commit ID로
 git checkout 커밋ID
-git checkout 브랜치
 
 # working directory작업 및 staging area에서의 취소는 UI로 대체
 
@@ -49,7 +48,22 @@ git reset head~1
 git reset head^
 
 # 버전별(commitID간, bracnh간) 비교 명령어 : diff
-# A를 기준으로 B가 어떤 변경이 있느지를 비교
+# A를 기준으로 B가 어떤 변경이 있는지를 비교
 git diff A B
 git diff commitID1 commitID2
 git diff 브랜치1 브랜치2
+
+# 브랜치 생성
+# 현재 checkout 하고있는 브랜치를 기준으로 새로운 브랜치 생성
+git branch 브랜치명
+
+# 브랜치 전환
+git checkout 브랜치명
+
+# 브랜치 목록 조회
+git branch
+
+# 브랜치 생성과 전환을 동시에
+git checkout -b 브랜치명
+
+# origin에서 브랜치 정보 fetch(로컬 레포까지)
