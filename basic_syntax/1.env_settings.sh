@@ -52,3 +52,7 @@ git config --global user.email "이메일"
 # 현재 레포에 한해서만 사용자 변경
 git config --local user.name "유저네임"
 git config --local user.email "이메일"
+
+# 사용자 이름 조회
+git config user.name
+git config user.email
