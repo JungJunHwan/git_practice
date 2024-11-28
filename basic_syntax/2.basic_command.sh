@@ -63,6 +63,9 @@ git checkout 브랜치명
 # 브랜치 목록 조회
 git branch
 
+# origin 브랜치까지 포함하여 조회
+git branch --all
+
 # 브랜치 생성과 전환을 동시에
 git checkout -b 브랜치명
 
