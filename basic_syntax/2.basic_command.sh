@@ -38,8 +38,9 @@ git push origin main --force
 # pull은 원격의 커밋 사항을 로컬로 다운로드(working directory까지 반영)
 git pull origin main
 
-# 특정 commit ID로
+# 특정 commit ID, 브랜치로
 git checkout 커밋ID
+git checkout 브랜치
 
 # working directory작업 및 staging area에서의 취소는 UI로 대체
 
