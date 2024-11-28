@@ -56,3 +56,9 @@ git config --local user.email "이메일"
 # 사용자 이름 조회
 git config user.name
 git config user.email
+
+# .gitignore 파일은 git 추적목록에서 제외대상 나열
+# 경로를 정확히 표시(경로는 root 경로에서부터 시작)
+# ex) ignoretest.txt 또는 testfolder/ignoretest2.txt
+# 만약 이미 git에서 추적되고 있는 파일은 아래와 같이 캐시 삭제 후에 ignore 처리
+git rm -r --cached .
