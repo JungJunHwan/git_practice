@@ -82,3 +82,13 @@ git fetch --all
 
 # 작업중(working directory)인 사항을 임시저장
 git stash
+# 저장한 최신의 작업목록 꺼내서 적용
+git stash pop
+# 저장한 작업목록은 놔둔채 작업내용 적용
+git stash apply 인덱스번호
+# 저장한 작업목록 조회
+git stash list
+# 저장한 작업내용 상세조회
+git stash show -p 인덱스번호
+# 저장목록 전체삭제
+git stash clear
