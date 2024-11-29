@@ -77,3 +77,8 @@ git branch -D 브랜치명
 
 # 원격에서 삭제된 브랜치 로컬에 반영 (origin/feat1)
 git fetch --all --prune
+# 모든 원격 브랜치 정보 fetch
+git fetch --all
+
+# 작업중(working directory)인 사항을 임시저장
+git stash
